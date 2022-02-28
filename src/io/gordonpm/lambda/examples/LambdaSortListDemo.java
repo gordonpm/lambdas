@@ -14,7 +14,6 @@ public class LambdaSortListDemo {
                 );
         printAll(personList);
 
-
         Collections.sort(personList,
                 (p1, p2) -> p1.getName().compareTo(p2.getName()));
         System.out.println("after sort by name in ascending order: ");
