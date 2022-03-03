@@ -13,6 +13,10 @@ public class LambdaFilterListStreamDemo {
                 new Person("George", 40)
         );
 
+        personList.forEach(person -> System.out.println(person));
+
+        personList.forEach(System.out::println); // method reference
+
         Stream<Person> filteredStream = personList.stream().filter(p -> p.getAge() > 30); // Predicate<Person> implementation (filter)
         filteredStream.forEach(person -> System.out.println(person)); //Consumer<Person> implementation
     }
