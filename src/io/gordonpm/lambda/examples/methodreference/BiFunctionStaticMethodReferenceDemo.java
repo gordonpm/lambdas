@@ -8,7 +8,7 @@ class Arithmetic {
     }
 }
 
-public class BiFunctionMethodReferenceDemo {
+public class BiFunctionStaticMethodReferenceDemo {
     public static void main(String[] args) {
         // normal way using lambdas
         BiFunction<Integer, Integer, Long> adder = (a, b) -> Long.valueOf(a + b);
