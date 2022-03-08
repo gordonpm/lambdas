@@ -32,5 +32,11 @@ public class ListFilterStreamDemo {
                 .filter(p -> p.getAge() > 30)
                 .collect(Collectors.toList()); // collecting as list
         filteredList.forEach(System.out::println);
+
+        List<String> filteredNameList = personList.stream()
+                .filter(p -> p.getAge() > 30)
+                .map(Person::getName)
+                .collect(Collectors.toList()); // collecting as list
+        filteredNameList.forEach(System.out::println);
     }
 }
